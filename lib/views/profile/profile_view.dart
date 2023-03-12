@@ -7,7 +7,7 @@ import 'package:getxcpractice/controllers/profilecontollers/profile_controller.d
 
 class ProfileView extends StatelessWidget {
   ProfileView({super.key});
-  final HomeController homeControl = Get.put(HomeController());
+
   final ProfileController profileControl = Get.put(ProfileController());
 
   @override
@@ -22,7 +22,7 @@ class ProfileView extends StatelessWidget {
               child: Text("back")),
           Center(
               child: Text(
-            "${homeControl.countvalue}",
+            "${profileControl.countvalue2}",
             style: TextStyle(fontSize: 40),
           )),
         ],
